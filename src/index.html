@@ -4,7 +4,23 @@
     <meta charset="utf-8" />
     <title>TryNgCsp</title>
     <base href="/" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self';" /> -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src-elem 'self' 'unsafe-inline'"
+    /> -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src-elem 'self' 'nonce-randomNonce'"
+    /> -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src-elem 'self' 'nonce-randomNonce' https://fonts.googleapis.com;"
+    /> -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src-elem 'self' 'nonce-randomNonce' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;"
+    /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
@@ -18,5 +34,6 @@
   </head>
   <body class="mat-typography">
     <app-root></app-root>
+    <!-- <app-root ngCspNonce="randomNonce"></app-root> -->
   </body>
 </html>
